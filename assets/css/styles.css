@@ -114,9 +114,9 @@ p { margin: 0 0 1.1rem; }
   border-bottom: 1px solid var(--line);
 }
 .nav { display: flex; align-items: center; justify-content: space-between; height: 72px; }
-.brand { display: flex; align-items: baseline; gap: .55rem; font-family: var(--serif); font-size: 1.4rem; color: var(--ink); }
-.brand b { font-weight: 600; letter-spacing: .02em; }
-.brand span { font-size: .72rem; letter-spacing: .26em; text-transform: uppercase; color: var(--muted); font-family: var(--sans); }
+.brand { display: flex !important; flex-direction: column !important; align-items: center; text-align: center; gap: .15rem; font-family: var(--serif); color: var(--ink); line-height: 1; }
+.brand b { display: block; font-weight: 600; letter-spacing: .02em; font-size: 1.82rem; line-height: 1; }
+.brand .brand-tag { display: block; font-size: .5rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-family: var(--sans); line-height: 1.2; }
 .nav-links { display: flex; align-items: center; gap: 1.9rem; list-style: none; margin: 0; padding: 0; }
 .nav-links a { color: var(--ink-soft); font-weight: 600; font-size: .95rem; }
 .nav-links a:hover, .nav-links a.active { color: var(--accent); }
@@ -226,6 +226,13 @@ p { margin: 0 0 1.1rem; }
 }
 .embed-slot h3 { color: var(--ink); }
 .embed-slot code { background: var(--paper-2); padding: .15rem .45rem; border-radius: 4px; font-size: .9em; color: var(--accent-deep); }
+
+/* Lista de precios ---------------------------------------------------- */
+.price-list { list-style: none; margin: 1rem 0 0; padding: 0; }
+.price-list li { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: .8rem 0; border-bottom: 1px solid var(--line); }
+.price-list li:last-child { border-bottom: 0; }
+.price-list span { color: var(--ink-soft); }
+.price-list b { font-family: var(--serif); color: var(--accent-deep); font-size: 1.3rem; white-space: nowrap; }
 
 /* FAQ ----------------------------------------------------------------- */
 .faq details { border-bottom: 1px solid var(--line); padding: 1.1rem 0; }
